@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<VBox stylesheets="@customer.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.Customer.CustomerController">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefViewportHeight="682.0" prefViewportWidth="950.0" styleClass="background" VBox.vgrow="ALWAYS">
+         <content>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="930.0">
+               <children>
+                  <VBox minHeight="400.0" minWidth="720.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox minHeight="60.0" prefHeight="100.0" prefWidth="950.0" spacing="5.0" styleClass="top-hbox" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="180.0" styleClass="heder-label" text="Choose Customer:" />
+                              <ComboBox fx:id="customersName" onAction="#chooseCustomer" prefWidth="150.0" styleClass="status-cb">
+                                 <HBox.margin>
+                                    <Insets top="8.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                              <Label fx:id="payYourLoansLabel" alignment="CENTER" prefHeight="45.0" prefWidth="572.0" textFill="#f20404" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox VBox.vgrow="ALWAYS">
+                           <children>
+                              <TabPane fx:id="mainTP" prefHeight="800.0" prefWidth="950.0" styleClass="transaction-tb" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
+                                <tabs>
+                                  <Tab text="Information">
+                                    <content>
+                                          <VBox>
+                                             <children>
+                                            <AnchorPane minHeight="180.0" minWidth="200.0" prefHeight="180.0" prefWidth="200.0" styleClass="background" VBox.vgrow="ALWAYS">
+                                                   <children>
+                                                      <HBox styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <children>
+                                                            <TabPane prefHeight="608.0" prefWidth="702.0" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
+                                                              <tabs>
+                                                                <Tab text="Loaner Loans">
+                                                                  <content>
+                                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                                                                           <children>
+                                                                              <HBox minHeight="153.0" minWidth="150.0" prefHeight="153.0" prefWidth="387.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                 <children>
+                                                                                    <VBox minWidth="90.0" prefHeight="562.0" prefWidth="248.0" spacing="5.0" styleClass="top-hbox" HBox.hgrow="ALWAYS">
+                                                                                       <children>
+                                                                                          <Label minHeight="20.0" minWidth="20.0" styleClass="heder-label" text="status:" />
+                                                                                          <ComboBox fx:id="statusCB" minHeight="19.0" minWidth="12.0" onAction="#chooseStatusLoner" prefHeight="26.0" prefWidth="104.0" styleClass="status-cb" visibleRowCount="30" />
+                                                                                       </children>
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" top="45.0" />
+                                                                                       </padding>
+                                                                                    </VBox>
+                                                                                    <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" prefHeight="562.0" prefWidth="559.0" spacing="2.0" styleClass="background" HBox.hgrow="ALWAYS">
+                                                                                       <children>
+                                                                                          <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="175.0" prefViewportHeight="60.0" prefViewportWidth="100.0" prefWidth="492.0" VBox.vgrow="ALWAYS">
+                                                                                             <content>
+                                                                                                <FlowPane fx:id="loanFlowPane" hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWrapLength="150.0" styleClass="center-box" vgap="5.0">
+                                                                                                   <opaqueInsets>
+                                                                                                      <Insets />
+                                                                                                   </opaqueInsets>
+                                                                                                </FlowPane>
+                                                                                             </content>
+                                                                                             <cursor>
+                                                                                                <Cursor fx:constant="HAND" />
+                                                                                             </cursor>
+                                                                                          </ScrollPane>
+                                                                                       </children>
+                                                                                       <padding>
+                                                                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                       </padding>
+                                                                                    </VBox>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                           </children>
+                                                                           <padding>
+                                                                              <Insets top="2.0" />
+                                                                           </padding>
+                                                                        </AnchorPane>
+                                                                  </content>
+                                                                </Tab>
+                                                                <Tab text="Lender Loans">
+                                                                  <content>
+                                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                                                                           <children>
+                                                                              <HBox minHeight="153.0" minWidth="150.0" prefHeight="153.0" prefWidth="387.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                 <children>
+                                                                                    <VBox minWidth="90.0" prefHeight="562.0" prefWidth="248.0" spacing="5.0" styleClass="top-hbox">
+                                                                                       <children>
+                                                                                          <Label minHeight="20.0" minWidth="20.0" styleClass="heder-label" text="status:" />
+                                                                                          <ComboBox fx:id="statusCB1" minHeight="19.0" minWidth="12.0" onAction="#chooseStatus" prefHeight="26.0" prefWidth="104.0" styleClass="status-cb" visibleRowCount="30" />
+                                                                                       </children>
+                                                                                       <padding>
+                                                                                          <Insets left="10.0" top="45.0" />
+                                                                                       </padding>
+                                                                                    </VBox>
+                                                                                    <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="150.0" prefHeight="562.0" prefWidth="559.0" spacing="2.0" styleClass="background" HBox.hgrow="ALWAYS">
+                                                                                       <children>
+                                                                                          <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="175.0" prefViewportHeight="60.0" prefViewportWidth="100.0" prefWidth="785.0" VBox.vgrow="ALWAYS">
+                                                                                             <content>
+                                                                                                <FlowPane fx:id="loanFlowPane1" hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="470.0" prefHeight="550.0" prefWidth="509.0" prefWrapLength="150.0" styleClass="center-box" vgap="5.0">
+                                                                                                   <opaqueInsets>
+                                                                                                      <Insets />
+                                                                                                   </opaqueInsets>
+                                                                                                </FlowPane>
+                                                                                             </content>
+                                                                                             <cursor>
+                                                                                                <Cursor fx:constant="HAND" />
+                                                                                             </cursor>
+                                                                                          </ScrollPane>
+                                                                                       </children>
+                                                                                       <padding>
+                                                                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                       </padding>
+                                                                                    </VBox>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                           </children>
+                                                                           <padding>
+                                                                              <Insets top="2.0" />
+                                                                           </padding>
+                                                                        </AnchorPane>
+                                                                  </content>
+                                                                </Tab>
+                                                              </tabs>
+                                                            </TabPane>
+                                                            <Separator orientation="VERTICAL" prefHeight="331.0" prefWidth="6.0" />
+                                                            <VBox alignment="CENTER" prefHeight="321.0" prefWidth="241.0" spacing="50.0" styleClass="accountTransaction-back" HBox.hgrow="ALWAYS">
+                                                               <children>
+                                                                  <Label styleClass="heder-label" text="Account Transactions">
+                                                                     <VBox.margin>
+                                                                        <Insets top="-15.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                                  <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="50.0" minWidth="87.0" prefHeight="200.0" prefWidth="241.0">
+                                                                     <padding>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                     </padding>
+                                                                     <children>
+                                                                        <Label alignment="CENTER" contentDisplay="CENTER" minHeight="20.0" minWidth="87.0" prefHeight="32.0" prefWidth="163.0" styleClass="secound-heder" text="Account Balance:" VBox.vgrow="ALWAYS" />
+                                                                        <Label fx:id="accountBalance" alignment="BOTTOM_CENTER" contentDisplay="CENTER" styleClass="secound-heder" text="0" VBox.vgrow="NEVER" />
+                                                                     </children>
+                                                                     <opaqueInsets>
+                                                                        <Insets />
+                                                                     </opaqueInsets>
+                                                                  </VBox>
+                                                                  <Label id="last-tran-label" fx:id="lastTransactions" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#showLastTransactions" prefHeight="55.0" prefWidth="214.0" text="Last Transactions" VBox.vgrow="ALWAYS" />
+                                                                  <TabPane minHeight="-Infinity" prefHeight="235.0" prefWidth="241.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+                                                                    <tabs>
+                                                                      <Tab text="Charge">
+                                                                        <content>
+                                                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                                                 <children>
+                                                                                    <VBox alignment="TOP_CENTER" layoutX="42.0" layoutY="-31.0" prefHeight="100.0" prefWidth="100.0" spacing="20.0" styleClass="acount-back" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                       <children>
+                                                                                          <Label styleClass="little-heder" text="Enter Amount:" />
+                                                                                          <TextField fx:id="enterAmountCM" minHeight="22.0" minWidth="50.0" onMouseClicked="#initAmountCTextArea" prefHeight="22.0" prefWidth="181.0">
+                                                                                             <VBox.margin>
+                                                                                                <Insets left="30.0" right="30.0" top="10.0" />
+                                                                                             </VBox.margin>
+                                                                                          </TextField>
+                                                                                          <Button mnemonicParsing="false" onAction="#confirmCharge" styleClass="confirm-button" text="Confirm">
+                                                                                             <VBox.margin>
+                                                                                                <Insets top="25.0" />
+                                                                                             </VBox.margin>
+                                                                                          </Button>
+                                                                                          <Text fx:id="actionWork" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                                                                       </children>
+                                                                                       <padding>
+                                                                                          <Insets top="10.0" />
+                                                                                       </padding>
+                                                                                    </VBox>
+                                                                                 </children>
+                                                                              </AnchorPane>
+                                                                        </content>
+                                                                      </Tab>
+                                                                      <Tab text="Withdraw">
+                                                                        <content>
+                                                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                                                 <children>
+                                                                                    <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" spacing="20.0" styleClass="center-box" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                       <children>
+                                                                                          <Label styleClass="little-heder" text="Enter Amount:" />
+                                                                                          <TextField fx:id="enterAmountWM" minHeight="22.0" minWidth="50.0" onMouseClicked="#initAmountWTextArea" prefHeight="22.0" prefWidth="181.0">
+                                                                                             <VBox.margin>
+                                                                                                <Insets left="30.0" right="30.0" top="10.0" />
+                                                                                             </VBox.margin>
+                                                                                          </TextField>
+                                                                                          <Button mnemonicParsing="false" onAction="#confirmWithdraw" styleClass="confirm-button" text="Confirm">
+                                                                                             <VBox.margin>
+                                                                                                <Insets top="25.0" />
+                                                                                             </VBox.margin>
+                                                                                          </Button>
+                                                                                          <Text fx:id="actionWork1" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                                                                       </children>
+                                                                                       <padding>
+                                                                                          <Insets top="10.0" />
+                                                                                       </padding>
+                                                                                    </VBox>
+                                                                                 </children>
+                                                                              </AnchorPane>
+                                                                        </content>
+                                                                      </Tab>
+                                                                    </tabs>
+                                                                  </TabPane>
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets top="25.0" />
+                                                               </padding>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </VBox>
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Scramble">
+                                    <content>
+                                      <AnchorPane minHeight="180.0" minWidth="200.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox layoutX="172.0" layoutY="38.0" prefHeight="100.0" prefWidth="200.0" styleClass="top-hbox" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <VBox prefHeight="591.0" prefWidth="293.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <GridPane prefHeight="608.0" prefWidth="337.0" styleClass="top-hbox" VBox.vgrow="ALWAYS">
+                                                              <columnConstraints>
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                                                                  <ColumnConstraints hgrow="ALWAYS" maxWidth="194.0" minWidth="96.66665649414062" prefWidth="178.0" />
+                                                                <ColumnConstraints hgrow="ALWAYS" maxWidth="125.0" minWidth="0.0" prefWidth="100.0" />
+                                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="0.0" prefWidth="3.0" />
+                                                              </columnConstraints>
+                                                              <rowConstraints>
+                                                                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints maxHeight="60.0" minHeight="0.0" prefHeight="60.0" vgrow="ALWAYS" />
+                                                                  <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="20.0" vgrow="ALWAYS" />
+                                                                  <RowConstraints maxHeight="65.33334350585938" minHeight="0.0" prefHeight="60.0" vgrow="ALWAYS" />
+                                                                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="ALWAYS" />
+                                                                  <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="20.0" vgrow="ALWAYS" />
+                                                                <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="ALWAYS" />
+                                                                  <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="20.0" vgrow="ALWAYS" />
+                                                                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="ALWAYS" />
+                                                                  <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="ALWAYS" />
+                                                                  <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="10.0" vgrow="ALWAYS" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                                                                <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                              </rowConstraints>
+                                                               <children>
+                                                                  <Label prefHeight="23.0" prefWidth="119.0" styleClass="scramble-label" text="Enter amount:" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+                                                                  <Label styleClass="scramble-label" text="Choose category:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                                  <Label styleClass="scramble-label" text="Enter interest:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                                  <Label styleClass="scramble-label" text="Enter min yaz:" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                                  <TextField fx:id="amountTF" prefHeight="25.0" prefWidth="78.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                                  <TextField fx:id="intrestTF" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                                                  <TextField fx:id="minYazTF" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                                                  <CheckComboBox fx:id="categoryCB" prefHeight="25.0" prefWidth="102.0" styleClass="category-combo-box" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                                     <GridPane.margin>
+                                                                        <Insets />
+                                                                     </GridPane.margin>
+                                                                  </CheckComboBox>
+                                                                  <Button mnemonicParsing="false" onAction="#continueButton" styleClass="confirm-button" text="Continue" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
+                                                                  <Label alignment="CENTER" styleClass="scramble-label" text="Maximum loans open" GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                                                     <GridPane.margin>
+                                                                        <Insets top="-25.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label alignment="CENTER" styleClass="scramble-label" text="Maximum percentage" GridPane.columnIndex="1" GridPane.rowIndex="10" GridPane.valignment="CENTER">
+                                                                     <GridPane.margin>
+                                                                        <Insets top="-10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <TextField fx:id="maxLoanTF" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                                                  <TextField fx:id="maxPrecentTF" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                                                                     <GridPane.margin>
+                                                                        <Insets top="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </TextField>
+                                                                  <Text fx:id="amountInvalidText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="bad-message" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                                  <Text fx:id="interestInvalidText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="bad-message" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                                  <Text fx:id="yazInvalidText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="bad-message" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                                  <Label styleClass="scramble-label" text="to the borrower:" GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets top="-10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label styleClass="scramble-label" text="of ownership of a loan:" GridPane.columnIndex="1" GridPane.rowIndex="10" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets top="-7.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Text fx:id="maxLoanLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="bad-message" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                                                  <Text fx:id="maxPrecentLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="bad-message" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                                               </children>
+                                                            </GridPane>
+                                                         </children>
+                                                      </VBox>
+                                                      <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                                      <VBox alignment="TOP_CENTER" prefHeight="581.0" prefWidth="647.0" spacing="25.0" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="376.0" prefViewportHeight="60.0" prefViewportWidth="100.0" prefWidth="606.0" styleClass="status-label">
+                                                               <content>
+                                                                  <FlowPane fx:id="loanToInvestFlowPane" hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWrapLength="150.0" styleClass="center-box" vgap="5.0">
+                                                                     <opaqueInsets>
+                                                                        <Insets />
+                                                                     </opaqueInsets>
+                                                                     <padding>
+                                                                        <Insets right="5.0" />
+                                                                     </padding>
+                                                                  </FlowPane>
+                                                               </content>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </ScrollPane>
+                                                            <Button fx:id="inlayButton" mnemonicParsing="false" onAction="#inlay" prefHeight="31.0" prefWidth="92.0" styleClass="confirm-button" text="Confirm" VBox.vgrow="ALWAYS" />
+                                                            <Text fx:id="finishInlayLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="good-message" textAlignment="CENTER" underline="true" VBox.vgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font size="10.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="628.0" VBox.vgrow="ALWAYS">
+                                                               <children>
+                                                                  <ProgressBar id="taskProgressBar" fx:id="taskProgressBar" prefHeight="18.0" prefWidth="671.0" progress="0.0" HBox.hgrow="ALWAYS" />
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets top="10.0" />
+                                                         </HBox.margin>
+                                                         <padding>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="Payment">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox layoutX="200.0" layoutY="111.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <TabPane prefHeight="593.0" prefWidth="950.0" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
+                                                         <tabs>
+                                                            <Tab text="Pay In This Current Yaz">
+                                                               <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="175.0" prefViewportHeight="60.0" prefViewportWidth="100.0" prefWidth="785.0" styleClass="status-label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <content>
+                                                                              <HBox>
+                                                                                 <children>
+                                                                                    <SplitPane dividerPositions="0.15018315018315018" orientation="VERTICAL" prefHeight="563.0" prefWidth="666.0" styleClass="background" HBox.hgrow="ALWAYS">
+                                                                                       <items>
+                                                                                          <AnchorPane minHeight="0.0" minWidth="160.0" prefHeight="100.0" prefWidth="160.0">
+                                                                                             <children>
+                                                                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="10.0" styleClass="top-hbox" text="Select Loans To Pay:" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                                             </children>
+                                                                                          </AnchorPane>
+                                                                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="108.0" prefWidth="334.0">
+                                                                                             <children>
+                                                                                                <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="94.0" layoutY="14.0" prefHeight="200.0" prefViewportHeight="200.0" prefViewportWidth="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                                   <content>
+                                                                                                      <AnchorPane minHeight="226.0" minWidth="448.0" prefHeight="226.0" prefWidth="448.0">
+                                                                                                         <children>
+                                                                                                            <FlowPane fx:id="paymentPayInThisCurrentYaz" prefHeight="227.0" prefWidth="446.0" styleClass="center-box" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                                                         </children>
+                                                                                                      </AnchorPane>
+                                                                                                   </content>
+                                                                                                </ScrollPane>
+                                                                                             </children>
+                                                                                          </AnchorPane>
+                                                                                       </items>
+                                                                                    </SplitPane>
+                                                                                    <VBox prefHeight="554.0" prefWidth="287.0" HBox.hgrow="ALWAYS">
+                                                                                       <children>
+                                                                                          <VBox alignment="TOP_CENTER" prefHeight="557.0" prefWidth="287.0" styleClass="accountTransaction-back" VBox.vgrow="ALWAYS">
+                                                                                             <children>
+                                                                                                <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                                                                                   <padding>
+                                                                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                                   </padding>
+                                                                                                   <children>
+                                                                                                      <Label alignment="CENTER" contentDisplay="CENTER" minHeight="20.0" minWidth="87.0" prefHeight="27.0" prefWidth="164.0" styleClass="heder-label" text="Current Balance:" VBox.vgrow="ALWAYS" />
+                                                                                                      <Label fx:id="currBalancePaymentLabel1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" styleClass="heder-label" text="0" VBox.vgrow="NEVER" />
+                                                                                                   </children>
+                                                                                                   <opaqueInsets>
+                                                                                                      <Insets />
+                                                                                                   </opaqueInsets>
+                                                                                                </VBox>
+                                                                                                <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0">
+                                                                                                   <padding>
+                                                                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                                   </padding>
+                                                                                                   <children>
+                                                                                                      <Label alignment="CENTER" contentDisplay="CENTER" minHeight="20.0" minWidth="87.0" prefHeight="27.0" prefWidth="152.0" styleClass="heder-label" text="After Payment:" VBox.vgrow="ALWAYS" />
+                                                                                                      <Label fx:id="balanceAfterLabel1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" styleClass="heder-label" text="0" VBox.vgrow="NEVER" />
+                                                                                                   </children>
+                                                                                                   <opaqueInsets>
+                                                                                                      <Insets />
+                                                                                                   </opaqueInsets>
+                                                                                                </VBox>
+                                                                                                <Button mnemonicParsing="false" onAction="#confirmButtonClicked1" prefHeight="60.0" prefWidth="237.0" styleClass="confirm-button" text="Confirm Payments">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets top="20.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Button>
+                                                                                                <Label fx:id="confirmPaymentThisYazLabel" alignment="CENTER" prefHeight="38.0" prefWidth="116.0">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets top="20.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                             </children>
+                                                                                          </VBox>
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                           </content>
+                                                                           <cursor>
+                                                                              <Cursor fx:constant="HAND" />
+                                                                           </cursor>
+                                                                        </ScrollPane>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </content>
+                                                            </Tab>
+                                                            <Tab text="Close a loan">
+                                                               <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                                                                     <children>
+                                                                        <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="175.0" prefViewportHeight="60.0" prefViewportWidth="100.0" prefWidth="785.0" styleClass="status-label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <content>
+                                                                              <HBox>
+                                                                                 <children>
+                                                                                    <SplitPane dividerPositions="0.15018315018315018" orientation="VERTICAL" prefHeight="563.0" prefWidth="669.0" styleClass="background" HBox.hgrow="ALWAYS">
+                                                                                       <items>
+                                                                                          <AnchorPane minHeight="0.0" minWidth="160.0" prefHeight="100.0" prefWidth="160.0">
+                                                                                             <children>
+                                                                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="10.0" styleClass="top-hbox" text="Select Loans To Close:" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                                             </children>
+                                                                                          </AnchorPane>
+                                                                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="108.0" prefWidth="657.0">
+                                                                                             <children>
+                                                                                                <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="7.0" layoutY="8.0" prefHeight="200.0" prefViewportHeight="200.0" prefViewportWidth="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                                                   <content>
+                                                                                                      <AnchorPane minHeight="226.0" minWidth="448.0" prefHeight="226.0" prefWidth="448.0">
+                                                                                                         <children>
+                                                                                                            <FlowPane fx:id="paymentCloseALoan" prefHeight="470.0" prefWidth="651.0" styleClass="center-box" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                                                         </children>
+                                                                                                      </AnchorPane>
+                                                                                                   </content>
+                                                                                                </ScrollPane>
+                                                                                             </children>
+                                                                                          </AnchorPane>
+                                                                                       </items>
+                                                                                    </SplitPane>
+                                                                                    <VBox prefHeight="563.0" prefWidth="291.0" HBox.hgrow="ALWAYS">
+                                                                                       <children>
+                                                                                          <VBox alignment="TOP_CENTER" prefHeight="563.0" prefWidth="294.0" styleClass="accountTransaction-back" VBox.vgrow="ALWAYS">
+                                                                                             <children>
+                                                                                                <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                                                                                   <padding>
+                                                                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                                   </padding>
+                                                                                                   <children>
+                                                                                                      <Label alignment="CENTER" contentDisplay="CENTER" minHeight="20.0" minWidth="87.0" prefHeight="27.0" prefWidth="164.0" styleClass="heder-label" text="Current Balance:" VBox.vgrow="ALWAYS" />
+                                                                                                      <Label fx:id="currBalancePaymentLabel" alignment="BOTTOM_CENTER" contentDisplay="CENTER" styleClass="heder-label" text="0" VBox.vgrow="NEVER" />
+                                                                                                   </children>
+                                                                                                   <opaqueInsets>
+                                                                                                      <Insets />
+                                                                                                   </opaqueInsets>
+                                                                                                </VBox>
+                                                                                                <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                                                                                   <padding>
+                                                                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                                   </padding>
+                                                                                                   <children>
+                                                                                                      <Label alignment="CENTER" contentDisplay="CENTER" minHeight="20.0" minWidth="87.0" prefHeight="27.0" prefWidth="153.0" styleClass="heder-label" text="After Payment:" VBox.vgrow="ALWAYS" />
+                                                                                                      <Label fx:id="balanceAfterLabel" alignment="BOTTOM_CENTER" contentDisplay="CENTER" styleClass="heder-label" text="0" VBox.vgrow="NEVER" />
+                                                                                                   </children>
+                                                                                                   <opaqueInsets>
+                                                                                                      <Insets />
+                                                                                                   </opaqueInsets>
+                                                                                                </VBox>
+                                                                                                <Button mnemonicParsing="false" onAction="#confirmButtonClicked" prefHeight="60.0" prefWidth="237.0" styleClass="confirm-button" text="Confirm Payments" VBox.vgrow="ALWAYS">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets top="20.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Button>
+                                                                                                <Label fx:id="confirmPaymentCloseLabel" alignment="CENTER" prefHeight="38.0" prefWidth="116.0">
+                                                                                                   <VBox.margin>
+                                                                                                      <Insets top="20.0" />
+                                                                                                   </VBox.margin>
+                                                                                                </Label>
+                                                                                             </children>
+                                                                                          </VBox>
+                                                                                       </children>
+                                                                                    </VBox>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                           </content>
+                                                                           <cursor>
+                                                                              <Cursor fx:constant="HAND" />
+                                                                           </cursor>
+                                                                        </ScrollPane>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </content>
+                                                            </Tab>
+                                                         </tabs>
+                                                      </TabPane>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

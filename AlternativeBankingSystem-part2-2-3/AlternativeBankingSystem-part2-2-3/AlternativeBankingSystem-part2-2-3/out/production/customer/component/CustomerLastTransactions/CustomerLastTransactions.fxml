@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+
+<ScrollPane fitToHeight="true" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="component.CustomerLastTransactions.CustomerLastTransactionsController">
+   <content>
+      <FlowPane fx:id="transactionsFlowPane" prefHeight="120.0" prefWidth="420.0" />
+   </content>
+</ScrollPane>

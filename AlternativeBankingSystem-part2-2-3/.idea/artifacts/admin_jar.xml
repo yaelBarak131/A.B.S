@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact name="admin:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/admin_jar</output-path>
+    <root id="root">
+      <element id="archive" name="admin.jar">
+        <element id="module-output" name="admin" />
+        <element id="module-output" name="dto" />
+      </element>
+      <element id="library" level="project" name="okHttp" />
+      <element id="library" level="project" name="lib2" />
+      <element id="library" level="project" name="lib" />
+      <element id="library" level="project" name="controlsfx-8.40.14" />
+      <element id="library" level="project" name="google-gson-2.1" />
+      <element id="library" level="project" name="lib1" />
+    </root>
+  </artifact>
+</component>

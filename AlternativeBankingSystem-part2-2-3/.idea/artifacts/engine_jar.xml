@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="engine:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/engine_jar</output-path>
+    <root id="root">
+      <element id="archive" name="engine.jar">
+        <element id="module-output" name="engine" />
+        <element id="module-output" name="dto" />
+      </element>
+      <element id="library" level="project" name="lib1" />
+      <element id="library" level="project" name="j2ee" />
+    </root>
+  </artifact>
+</component>

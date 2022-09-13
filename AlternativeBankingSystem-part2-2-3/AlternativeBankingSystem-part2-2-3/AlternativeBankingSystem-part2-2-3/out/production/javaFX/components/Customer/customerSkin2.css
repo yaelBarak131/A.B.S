@@ -1,0 +1,133 @@
+.top-hbox {
+    -fx-background-color:#4D555A;
+    -fx-border-color: #F58220;
+}
+.heder-label{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 20px;
+    -fx-text-fill: #F58220;
+}
+.category-combo-box .combo-box{
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width:1px;
+    -fx-background-color: white;
+    -fx-border-color: #F58220;
+}
+.category-combo-box .combo-box .list-cell
+{
+    -fx-font-weight: BOLD;
+    -fx-font-family: Microsoft Yi Baiti;
+    -fx-font-size: 12px;
+    -fx-text-fill:#F58220;
+}
+.transaction-tb:top .tab-header-area .tab-header-background{
+    -fx-background-color: #F58220;
+    -fx-border-color:  #4D555A;
+}
+
+
+.transaction-tb:top .tab-header-area .headers-region .tab {
+    -fx-background-color: #4D555A;
+}
+
+.transaction-tb:top .tab-header-area .headers-region .tab:top .tab-container .tab-label{
+    -fx-text-fill:  #F58220;
+
+}
+.background{
+    -fx-background-color: #4D555A;
+
+}
+.accountTransaction-back{
+    -fx-background-color: #4D555A;
+
+    -fx-border-color:  #F58220;
+    -fx-border-width: 5px;
+}
+.separator{
+    -fx-border-width: 2px;
+    -fx-background-color: #F58220;
+
+}
+.center-box{
+    -fx-background-color:white;
+    -fx-border-color: #4D555A;
+
+}
+#last-tran-label{
+    -fx-content-display: CENTER;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: white;
+    -fx-border-color: #4D555A;
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-width:1px;
+    -fx-border-color: white;
+    -fx-text-fill:#F58220;
+    -fx-border-color: #4D555A;
+}
+.secound-heder{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 20px;
+    -fx-text-fill:#F58220;
+}
+.status-cb{
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width:1px;
+    -fx-background-color: white;
+    -fx-border-color: #F58220;
+}
+.status-cb .list-cell
+{
+    -fx-font-weight: BOLD;
+    -fx-font-family: Microsoft Yi Baiti;
+    -fx-font-size: 12px;
+    -fx-text-fill:#F58220;
+}
+
+.status-label{
+    -fx-content-display: CENTER;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 20px;
+    -fx-font-weight: BOLD;
+    -fx-text-fill:#F58220;
+
+}
+.little-heder{
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+    -fx-text-fill:#F58220;
+}
+.confirm-button{
+    -fx-background-color:#F58220;
+    -fx-border-color: #4D555A;
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width:1px;
+    -fx-text-fill:#4D555A;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+}
+.scramble-label{
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 16px;
+    -fx-font-weight: BOLD;
+    -fx-text-fill:white;
+}
+.acount-back{
+    -fx-background-color:#4D555A;
+    -fx-border-color: #F58220;
+
+}

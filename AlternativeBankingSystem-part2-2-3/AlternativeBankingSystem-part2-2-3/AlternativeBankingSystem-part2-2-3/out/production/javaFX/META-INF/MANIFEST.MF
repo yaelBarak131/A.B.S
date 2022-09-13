@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: Main.testi
+Class-Path: controlsfx-8.40.14.jar j2ee.jar
+

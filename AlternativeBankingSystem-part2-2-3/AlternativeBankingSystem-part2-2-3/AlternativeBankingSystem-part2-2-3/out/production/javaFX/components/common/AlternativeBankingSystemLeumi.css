@@ -1,0 +1,96 @@
+.top-button{
+    -fx-content-display: CENTER;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+    -fx-min-width: 100px;
+    -fx-pref-height: 45px;
+    -fx-pref-width: 400px;
+    -fx-background-color: #00A1E5;
+    -fx-text-fill: WHITE;
+}
+
+#current-yaz{
+    -fx-content-display: TOP;
+    -fx-cursor: DEFAULT;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 12px;
+    -fx-font-weight: BOLD;
+    -fx-min-height: 20px;
+    -fx-min-width: 90px;
+        -fx-base: #ececec;
+    -fx-light-text-color: white;
+    -fx-dark-text-color: black;
+    -fx-mid-text-color: #333333;
+    -fx-background-color: #00A1E5;
+    -fx-text-fill: white;
+    -fx-translate-y: 1px;
+}
+.main-button{
+    -fx-alignment: CENTER;
+    -fx-content-display: CENTER;
+    -fx-font:  Microsoft Yi Baiti;
+    -fx-background-color: linear-gradient(#0082D6,#6CCAF3);
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+    -fx-text-alignment: CENTER;
+
+}
+#center{
+    -fx-background-color: white;
+}
+#bank-name{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 25px;
+    -fx-text-fill: white;
+}
+#hbox-top{
+    -fx-background-color: linear-gradient(#002D71, #0082D6);
+}
+.regular-label{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+}
+.file-label{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 17px;
+    -fx-text-fill: white;
+}
+
+.info-label {
+    fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 30px;
+    -fx-text-fill:White;
+}
+.status-label{
+    fx-font:Microsoft Yi Baiti;
+    -fx-background-color: white;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 15px;
+    -fx-text-fill:#002D71;
+}
+.info-center{
+    -fx-background-color: linear-gradient(#002D71, #0082D6);
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-width:1px;
+    -fx-border-color:#002D71;
+}
+#status-cb{
+    -fx-background-color: white;
+
+}
+#status-cb .list-cell
+{
+    -fx-font-weight: BOLD;
+    -fx-font-family: Microsoft Yi Baiti;
+    -fx-font-size: 8px;
+    -fx-background-color: linear-gradient(#002D71, #0082D6);
+}

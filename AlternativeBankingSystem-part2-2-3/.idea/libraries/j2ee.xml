@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="j2ee">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AlternativeBankingSystem-part2-2-3/AlternativeBankingSystem-part2-2-3/lib/j2ee.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

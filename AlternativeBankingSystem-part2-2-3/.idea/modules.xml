@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlternativeBankingSystem-part2-2-3/AlternativeBankingSystem-part2-2-3/ABS/ABS.iml" filepath="$PROJECT_DIR$/AlternativeBankingSystem-part2-2-3/AlternativeBankingSystem-part2-2-3/ABS/ABS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AlternativeBankingSystem-part2-2-3.iml" filepath="$PROJECT_DIR$/.idea/AlternativeBankingSystem-part2-2-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlternativeBankingSystem-part2-2-3/AlternativeBankingSystem-part2-2-3/admin/admin.iml" filepath="$PROJECT_DIR$/AlternativeBankingSystem-part2-2-3/AlternativeBankingSystem-part2-2-3/admin/admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlternativeBankingSystem-part2-2-3/AlternativeBankingSystem-part2-2-3/customer/customer.iml" filepath="$PROJECT_DIR$/AlternativeBankingSystem-part2-2-3/AlternativeBankingSystem-part2-2-3/customer/customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlternativeBankingSystem-part2-2-3/AlternativeBankingSystem-part2-2-3/dto/dto.iml" filepath="$PROJECT_DIR$/AlternativeBankingSystem-part2-2-3/AlternativeBankingSystem-part2-2-3/dto/dto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlternativeBankingSystem-part2-2-3/AlternativeBankingSystem-part2-2-3/engine/engine.iml" filepath="$PROJECT_DIR$/AlternativeBankingSystem-part2-2-3/AlternativeBankingSystem-part2-2-3/engine/engine.iml" />
+    </modules>
+  </component>
+</project>

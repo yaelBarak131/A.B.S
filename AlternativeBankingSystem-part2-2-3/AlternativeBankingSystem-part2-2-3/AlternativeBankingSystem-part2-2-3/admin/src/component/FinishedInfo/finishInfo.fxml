@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="145.0" prefWidth="181.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="component.FinishedInfo.FinishInfoController">
+   <children>
+      <GridPane prefHeight="143.0" prefWidth="184.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="100.33331298828125" minWidth="10.0" prefWidth="68.33331298828125" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="69.66668701171875" minWidth="10.0" prefWidth="69.66668701171875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="pendingInfoLabel" onMouseClicked="#showPendingInfo" text="Pending info" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="83.0" text="Starting YAZ" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Finish YAZ" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="paymentsLabel" onMouseClicked="#showPaymentsDescription" text="Description of loan payments" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <Label fx:id="startingYazLabel" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="finishYazLabel" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>

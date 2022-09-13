@@ -1,0 +1,12 @@
+.label{
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 12px;
+    -fx-text-fill: #4D555A;
+    -fx-font-weight: bold;
+}
+#hbox{
+    -fx-background-color: white ;
+    -fx-border-color: #F58220;
+    -fx-border-width: 5px;
+    -fx-background-radius: 5.0;
+}

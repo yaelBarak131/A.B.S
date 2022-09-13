@@ -1,0 +1,109 @@
+.top-button{
+    -fx-content-display: CENTER;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+    -fx-min-width: 100px;
+    -fx-pref-height: 45px;
+    -fx-pref-width: 250px;
+    -fx-background-color: #67BD7E;
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-width:1px;
+    -fx-border-color: white;
+    -fx-text-fill: WHITE;
+}
+
+#current-yaz{
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 12px;
+    -fx-pref-height: 100px;
+    -fx-pref-width: 100px;
+    -fx-background: derive(-fx-base, 26.4%);
+    -fx-base: #ececec;
+    -fx-light-text-color: white;
+    -fx-dark-text-color: black;
+    -fx-mid-text-color: #333333;
+    -fx-background-color: #67BD7E;
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-width:1px;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-translate-y: 1px;
+}
+.main-button{
+    -fx-alignment: CENTER;
+    -fx-content-display: CENTER;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-background-color:#67BD7E;
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width:5px;
+    -fx-border-color: #67BD7E;
+}
+
+.center{
+    -fx-background-color: white;
+}
+#bank-name{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 32px;
+    -fx-text-fill: white;
+}
+.hbox-top{
+    -fx-background-color: linear-gradient(to bottom right,  #67BD7E,#7EC55D);
+}
+#regular-label{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+}
+.file-label{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 17px;
+    -fx-text-fill: white;
+}
+
+.info-label {
+    fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 30px;
+    -fx-text-fill:White;
+}
+.status-label{
+    fx-font:Microsoft Yi Baiti;
+    -fx-background-color: white;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 15px;
+    -fx-text-fill:#67BD7E;
+}
+.info-center{
+    -fx-background-color:linear-gradient(to bottom right,  #67BD7E,#7EC55D);
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-width:1px;
+    -fx-border-color:#67BD7E;
+}
+#status-cb{
+    -fx-background-color: white;
+
+}
+#status-cb .list-cell
+{
+    -fx-font-weight: BOLD;
+    -fx-font-family: Microsoft Yi Baiti;
+    -fx-font-size: 12px;
+    -fx-text-fill:linear-gradient(to bottom right,  #67BD7E,#7EC55D);
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="boardPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="950.0" styleClass="center" stylesheets="@AlternativeBankingSystemDiscont.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="component.customerMainApp.CustomerAppController">
+   <top>
+      <ScrollPane fx:id="topPanelCustomerScreen" fitToHeight="true" fitToWidth="true" BorderPane.alignment="CENTER_LEFT">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <content>
+            <HBox alignment="CENTER" minHeight="118.0" minWidth="900.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="118.0" prefWidth="646.0" spacing="5.0" styleClass="hbox-top">
+               <children>
+                  <VBox minHeight="116.0" minWidth="129.0" prefHeight="116.0" prefWidth="129.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <GridPane minHeight="112.0" minWidth="27.0" prefHeight="112.0" prefWidth="27.0" VBox.vgrow="ALWAYS">
+                          <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="98.33334350585938" minWidth="48.333343505859375" prefWidth="98.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="87.0" prefWidth="103.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="33.0" minHeight="15.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="30.0" minHeight="5.0" prefHeight="5.0" vgrow="ALWAYS" />
+                            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="49.0" minHeight="30.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="30.0" minHeight="11.0" prefHeight="12.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="198.0" text="Messages:" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+                              <ListView fx:id="messageLoansToPay" prefHeight="73.0" prefWidth="146.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <VBox minWidth="553.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <GridPane minHeight="56.0" minWidth="279.0" prefHeight="56.0" prefWidth="687.0" translateY="-3.0" VBox.vgrow="ALWAYS">
+                          <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="10.0" minWidth="20.0" prefWidth="10.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="228.0" minWidth="40.0" prefWidth="109.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="438.0" minWidth="20.0" prefWidth="168.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="438.0" minWidth="10.0" prefWidth="201.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="10.0" minWidth="20.0" prefWidth="10.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="38.0" minHeight="7.0" prefHeight="38.0" vgrow="NEVER" />
+                            <RowConstraints maxHeight="49.0" minHeight="6.0" prefHeight="29.0" vgrow="ALWAYS" />
+                              <RowConstraints maxHeight="26.0" minHeight="7.0" prefHeight="7.0" vgrow="NEVER" />
+                          </rowConstraints>
+                           <children>
+                              <Label id="bank-name" prefHeight="48.0" prefWidth="455.0" text="Alternative Banking System" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                              <Label fx:id="helloCustomerLabel" minHeight="30.0" minWidth="98.0" prefHeight="30.0" prefWidth="98.0" text="Hello ..." textFill="WHITE" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </GridPane>
+                        <HBox VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button minHeight="42.0" minWidth="105.0" mnemonicParsing="false" onAction="#addNewXmlFile" prefHeight="42.0" prefWidth="105.0" styleClass="current-yaz" text="Add New File ">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Label fx:id="addFileLabel" minWidth="179.0" prefHeight="21.0" prefWidth="179.0" text="Add A File To Start" textFill="#e10000" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="30.0" right="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="50.0" minWidth="90.0" prefHeight="76.0" prefWidth="90.0" styleClass="current-yaz" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" minHeight="20.0" minWidth="87.0" prefHeight="27.0" prefWidth="87.0" styleClass="file-label" text="Curr YAZ:" VBox.vgrow="ALWAYS" />
+                        <Label fx:id="numOfCurrYAZ" alignment="BOTTOM_CENTER" contentDisplay="CENTER" styleClass="info-label" text="0" VBox.vgrow="NEVER" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" />
+               </padding>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </top>
+   <padding>
+      <Insets right="2.0" top="2.0" />
+   </padding>
+</BorderPane>

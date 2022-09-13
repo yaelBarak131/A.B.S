@@ -1,0 +1,13 @@
+
+.hbox{
+    -fx-background-color: white ;
+    -fx-border-color: linear-gradient(to bottom right,  #67BD7E,#7EC55D) ;
+    -fx-border-width: 5px;
+    -fx-background-radius: 5.0;
+}
+.label{
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 18px;
+    -fx-text-fill: #67BD7E;
+    -fx-font-weight: bold;
+}

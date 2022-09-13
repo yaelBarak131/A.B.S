@@ -1,0 +1,147 @@
+.top-hbox {
+    -fx-background-color: linear-gradient( #7EC55D,#67BD7E);
+    -fx-border-color: black;
+    -fx-text-fill: white;
+}
+.heder-label{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+.category-combo-box .combo-box{
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width:1px;
+    -fx-background-color: white;
+    -fx-border-color: #67BD7E;
+}
+.category-combo-box .combo-box .list-cell
+{
+    -fx-font-weight: BOLD;
+    -fx-font-family: Microsoft Yi Baiti;
+    -fx-font-size: 12px;
+    -fx-text-fill:#67BD7E;
+}
+.transaction-tb:top .tab-header-area .tab-header-background{
+   -fx-background-color: #67BD7E;
+    -fx-border-color: black;
+}
+
+
+.transaction-tb:top .tab-header-area .headers-region .tab {
+    -fx-background-color: black;
+}
+
+.transaction-tb:top .tab-header-area .headers-region .tab:top .tab-container .tab-label{
+    -fx-text-fill: white;
+
+}
+.background{
+    -fx-background-color: black;
+
+}
+.accountTransaction-back{
+    -fx-background-color: linear-gradient(#67BD7E,#7EC55D);
+
+    -fx-border-color: #67BD7E;
+    -fx-border-width: 5px;
+}
+.separator{
+    -fx-border-width: 2px;
+    -fx-background-color: black;
+
+}
+.center-box{
+    -fx-background-color:white;
+    -fx-border-color: black;
+
+}
+.acount-back{
+    -fx-background-color:white;
+    -fx-border-color: black;
+}
+#last-tran-label{
+    -fx-content-display: CENTER;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-width:1px;
+    -fx-border-color: white;
+    -fx-text-fill:#67BD7E;
+    -fx-border-color: black;
+}
+.secound-heder{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+.status-cb{
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width:1px;
+    -fx-background-color: white;
+    -fx-border-color: #67BD7E;
+}
+.status-cb .list-cell
+{
+    -fx-font-weight: BOLD;
+    -fx-font-family: Microsoft Yi Baiti;
+    -fx-font-size: 12px;
+    -fx-text-fill:linear-gradient(to bottom right,  #67BD7E,#7EC55D);
+}
+
+.status-label{
+    -fx-content-display: CENTER;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 20px;
+    -fx-font-weight: BOLD;
+    -fx-text-fill:#67BD7E;
+
+}
+.little-heder{
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+    -fx-text-fill:#67BD7E;
+}
+.confirm-button{
+    -fx-background-color:#67BD7E;
+    -fx-border-color: white;
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width:1px;
+    -fx-text-fill: white;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+}
+.scramble-label{
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 16px;
+    -fx-font-weight: BOLD;
+    -fx-text-fill:white;
+}
+#taskProgressBar.progress-bar:determinate .bar{
+    -fx-background-color: linear-gradient(to bottom right, #2EC05D ,#2BBE66,#26BA75,#20B687);
+}
+.bad-message{
+    -fx-font: Microsoft Yi Baiti;
+    -fx-fill: red;
+    -fx-font-size: 12px;
+}
+.good-message{
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 16px;
+    -fx-font-weight: BOLD;
+    -fx-fill:white;
+}

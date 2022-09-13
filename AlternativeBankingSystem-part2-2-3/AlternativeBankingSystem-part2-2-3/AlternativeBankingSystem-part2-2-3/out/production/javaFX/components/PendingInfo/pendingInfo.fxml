@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="254.0" prefWidth="184.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.PendingInfo.PendingInfoController">
+   <children>
+      <GridPane prefHeight="255.0" prefWidth="155.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="118.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="146.0" minHeight="9.0" prefHeight="127.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="146.0" minHeight="0.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="10.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="21.0" prefHeight="17.0" prefWidth="95.0" text="Lenders:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+               <children>
+                  <VBox prefHeight="134.0" prefWidth="113.0">
+                     <children>
+                        <Label text="Name:" />
+                        <ListView fx:id="lendersNameList" prefHeight="117.0" prefWidth="106.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="134.0" prefWidth="118.0">
+                     <children>
+                        <Label text="Invest:" />
+                        <ListView fx:id="lendersInvestList" prefHeight="117.0" prefWidth="112.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label text="Left to raised:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="raised:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="leftRaisedLabel" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="raisedLabel" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>

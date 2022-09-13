@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: 
+Class-Path: gson-2.1.jar gson-2.1-sources.jar gson-2.1-javadoc.jar j2ee.
+ jar j2ee.jar
+

@@ -1,0 +1,81 @@
+.top-button{
+    -fx-content-display: CENTER;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+    -fx-min-width: 100px;
+    -fx-pref-height: 32px;
+    -fx-pref-width: 250px;
+    -fx-background-color: #F58220;
+    -fx-text-fill: WHITE;
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width:5px;
+}
+
+#current-yaz{
+    -fx-alignment: TOP_CENTER;
+    -fx-content-display: TOP;
+    -fx-cursor: DEFAULT;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 12px;
+    -fx-font-weight: BOLD;
+    -fx-min-height: 20px;
+    -fx-min-width: 99px;
+    -fx-pref-height: 63px;
+    -fx-pref-width: 98px;
+    -fx-base: #ececec;
+    -fx-light-text-color: white;
+    -fx-dark-text-color: black;
+    -fx-mid-text-color: #333333;
+    -fx-background-color: #F58220;
+    -fx-text-fill: white;
+    -fx-translate-x: 15px;
+    -fx-translate-y: 1px;
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width:5px;
+}
+.main-button{
+    -fx-alignment: CENTER;
+    -fx-content-display: CENTER;
+    -fx-font:  Microsoft Yi Baiti;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 150px;
+    -fx-background-color: #F58220;
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width:5px;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+    -fx-text-alignment: CENTER;
+}
+#center{
+    -fx-background-color: white;
+
+}
+#bank-name{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 32px;
+    -fx-text-fill: white;
+}
+#hbox-top{
+    -fx-background-color: #4D555A;
+}
+.regular-label{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+}
+.regular-label{
+    -fx-font:Microsoft Yi Baiti;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}

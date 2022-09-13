@@ -1,0 +1,67 @@
+
+.error-label {
+    -fx-text-fill: RED;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 16px;
+    -fx-font: Microsoft Yi Baiti;
+
+}
+
+.main-action-button {
+
+    -fx-background-color:#67BD7E;
+    -fx-border-color: black;
+    -fx-background-size: 1200px 900px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width:1px;
+    -fx-text-fill: white;
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 15px;
+    -fx-font-weight: BOLD;
+}
+.main-action-button .text{
+    -fx-font: Microsoft Yi Baiti;
+    -fx-font-size: 20px;
+    -fx-fill: black;
+}
+
+.center{
+    -fx-background-image: url("background1.jpeg") ;
+    -fx-background-repeat: no-repeat;
+
+
+    -fx-webkit-background-size: cover;
+    -fx-moz-background-size: cover;
+    -fx-o-background-size: cover;
+    -fx-background-size: cover;
+
+}
+.header{
+
+    -fx-font: Microsoft Yi Baiti;
+    -fx-color: black;
+    -fx-fill: #67BD7E;
+    -fx-font-size: 45px;
+    -fx-wrap-text: black;
+    -fx-text-fill: black;
+    -fx-text-overrun: black;
+    -fx-stroke: black;
+    -fx-stroke-width: 3;
+    -fx-font-weight: bold;
+}
+.second-header{
+
+    -fx-font: Microsoft Yi Baiti;
+    -fx-color: black;
+    -fx-fill: #67BD7E;
+    -fx-font-size:20px;
+    -fx-wrap-text: black;
+    -fx-text-fill: black;
+    -fx-text-overrun: black;
+    -fx-stroke: black;
+    -fx-stroke-width: 2;
+    -fx-font-weight: bold;
+
+}
+
